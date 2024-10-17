@@ -34,14 +34,11 @@ def main_flow():
    data1 = run_task("BasicStats.py")
    data2 = run_task("Correlationcoefficient.py", wait_for=[data1])  
    data3 = run_task("Binning.py", wait_for=[data2]) 
-   data4 = run_task("PearsonCorrelation.py", wait_for=[data3])
-   #data5 = run_task("Normalization.py", wait_for=[data4]) 
-   #data6 = run_task("Encoding.py", wait_for=[data5])
-   #data7 = run_task("DataVizualization.py", wait_for=[data6]) 
+   run_task("PearsonCorrelation.py", wait_for=[data3])
 
 # To run locally
 if __name__ == "__main__":
     main_flow.serve(name="cardiovascular-ds-workflow",
                       tags=["cardiovascular datascience project workflow"],
                       parameters={},
-                      interval=60)
+                      interval=120)
