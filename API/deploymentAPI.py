@@ -6,7 +6,7 @@ import requests
 import json
 
 # Replace these variables with your actual Prefect Cloud credentials
-PREFECT_API_KEY = "pnu_YtZWDV5docvM1I1XpQysa3EH1EKkqM4CtdAW"  # Your Prefect Cloud API key
+PREFECT_API_KEY = "pnu_WSRFOtLax8Ach0w8pjyGjL6vozB82g0xSCv8"  # Your Prefect Cloud API key
 ACCOUNT_ID = "1d41fc5f-7f44-4380-ac43-4ea4ccce4bf0"  # Your Prefect Cloud Account ID
 WORKSPACE_ID = "f47716bb-0023-4eed-b03b-6131b4675dce"  # Your Prefect Cloud Workspace ID
 DEPLOYMENT_ID = "37a06923-4096-4fff-b44e-e343fb241c94"  # Your Deployment ID
