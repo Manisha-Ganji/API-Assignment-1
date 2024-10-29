@@ -34,7 +34,9 @@ def main_flow():
    data1 = run_task("BasicStats.py")
    data2 = run_task("Correlationcoefficient.py", wait_for=[data1])  
    data3 = run_task("Binning.py", wait_for=[data2]) 
-   run_task("PearsonCorrelation.py", wait_for=[data3])
+   data4 = run_task("PearsonCorrelation.py", wait_for=[data3])
+   data5 = run_task("FeatureImportance.py", wait_for=[data4])
+   run_task("Visualization.py", wait_for=[data5])
 
 # To run locally
 if __name__ == "__main__":
